@@ -1,0 +1,23 @@
+{
+  "name": "firebase-db-onserver",
+  "version": "1.0.0",
+  "description": "Various database operations though the server side.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlesIvia/firebase-db-onserver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlesIvia/firebase-db-onserver/issues"
+  },
+  "homepage": "https://github.com/CharlesIvia/firebase-db-onserver#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
