@@ -18,8 +18,20 @@ admin.initializeApp({
 app.use(express.json());
 app.use(express.static("public"));
 
+const database = admin.database();
+const usersRef = database.ref("/users");
+
 app.get("/", (req, res) => {
   res.send("index");
+});
+
+app.post("/save", (req, res) => {
+  const user_id = usersRef.push().key;
+  usersRef.child(user_id).set({
+    first_name: req.body.first_name,
+    last_name: req.body.last_name,
+    age: req.body.age,
+  });
 });
 
 app.listen(port, () => {
